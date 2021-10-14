@@ -24,13 +24,8 @@ img {
   color: #ffffffa8;
 }
 
-/* .nav-bar a.logo {
-  /* font-size: 40px;
-  font-weight: bold; 
-} */
-
 .nav-bar a:hover {
-  text-decoration: overline;
+  color: #ffffff;
 }
 .nav-right {
   float: right;
@@ -38,9 +33,7 @@ img {
 h1 {
   font-family: sans-serif;
   font-weight: 700;
-  /* margin-top: 40px; */
   font-size: 32px;
-  /* padding: 0.5em; */
   color: #ffffff65;
 }
 body,
@@ -50,6 +43,3 @@ a {
   color: #ffffff;
   font-size: 24px;
 }
-/* nav-left {
-  display: flex;
-} */
