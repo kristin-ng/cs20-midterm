@@ -33,13 +33,25 @@ img {
 h1 {
   font-family: sans-serif;
   font-weight: 700;
+  font-size: 64px;
+  color: #4f4645;
+}
+h2 {
+  font-family: sans-serif;
+  font-weight: 700;
   font-size: 32px;
-  color: #ffffff65;
+  color: #4f4645;
 }
 body,
 a {
   font-family: sans-serif;
   text-align: center;
-  color: #ffffff;
   font-size: 24px;
+}
+footer {
+  float: right;
+  font-size: 12px;
+}
+body {
+  background-color: #99a8b1;
 }
