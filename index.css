@@ -55,3 +55,27 @@ footer {
 body {
   background-color: #99a8b1;
 }
+.user-input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  background: #ececec;
+
+  width: 300px;
+  margin: 25px auto 5px auto;
+  padding: 5px;
+  font-size: 90%;
+}
+.submit-btn {
+  width: 300px;
+  padding: 5px;
+  margin: 5px auto 25px auto;
+  background: #089b8a;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 100%;
+}
+.card-container {
+  text-align: left;
+}
