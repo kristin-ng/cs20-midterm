@@ -1,30 +1,19 @@
-function validate() {
-  error = false;
-  document.getElementById("errFeed").style.display = " ";
-  document.getElementById("errName").style.display = " ";
-  with (document.data) {
-    if (feedback.value == "") {
-      console.log("feedback is null");
-      document.getElementById("errFeed").style.display = "inline-block";
-      feedback.focus();
-      err = true;
-    }
-    if (name.value == "") {
-      console.log("feedback is null");
-      document.getElementById("errName").style.display = "inline-block";
-      name.focus();
-      err = true;
-    }
-  }
-  return !err;
-}
-
 var btn = $(".submit-btn");
 var container = $(".card-container");
-
 btn.on("click", appendToList);
 container.on("click", deleteCard);
 
+function validate() {
+  console.log("in func");
+  error = false;
+  feedback = $("input[name='feedback']");
+  feedbackGet = feedback.get(0);
+  myFeedback = feedbackGet.value;
+  if (!myFeedback) {
+    alert("Feedback is required.");
+    error = true;
+  }
+}
 function appendToList(event) {
   event.preventDefault();
   var name_form = $(".name");
@@ -32,6 +21,14 @@ function appendToList(event) {
   var comment_form = $(".comment");
   var comment = $(".comment").val();
   var name = $(".name").val();
+
+  feedback = $("input[name='feedback']");
+  feedbackGet = feedback.get(0);
+  myFeedback = feedbackGet.value;
+
+  if (name == "" && myFeedback) {
+    name = "Anonymous";
+  }
 
   container.append(`
    <div class="card">

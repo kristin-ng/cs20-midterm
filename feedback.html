@@ -53,17 +53,13 @@
             <!-- form validation and then either alert with review or have it load to screen -->
 
             <article class="content">
-                <form class="user-input" method="post" onsubmit="return validate()">
+                <form class="user-input" method="post" >
                     <h2>Add Your Own Review!</h2>
-                    <input name ="name" class="name" type="text" placeholder="Name * "> <div id="errName" class="errMsg">Name is required</div> <br/>
+                    <input id="name" name ="name" class="name" type="text" placeholder="Name * "> <br/>
                     <input name="email" class="email" type="text" placeholder="Email"> <br/>
-                    <input name ="feedback" class="comment" type="text" placeholder="Feedback * "> <div id="errFeed" class="errMsg">Feedback is required</div><br/> 
-                    <input class="submit-btn" type="submit" value="Submit!"> <br/> 
-                </form>
-
-                <!-- ,note: js validation currently doesn't work -->
-
-        
+                    <input id="feedback" name ="feedback" class="comment" type="text" placeholder="Feedback * "> <br/> 
+                    <input class="submit-btn" type="submit" value="Submit!" onclick="validate()"> <br/> 
+                </form>        
 
     </article>
         </div>
