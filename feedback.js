@@ -3,17 +3,6 @@ var container = $(".card-container");
 btn.on("click", appendToList);
 container.on("click", deleteCard);
 
-function validate() {
-  console.log("in func");
-  error = false;
-  feedback = $("input[name='feedback']");
-  feedbackGet = feedback.get(0);
-  myFeedback = feedbackGet.value;
-  if (!myFeedback) {
-    alert("Feedback is required.");
-    error = true;
-  }
-}
 function appendToList(event) {
   event.preventDefault();
   var name_form = $(".name");
