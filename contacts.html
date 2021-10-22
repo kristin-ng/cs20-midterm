@@ -9,19 +9,24 @@
     />
     <link rel="stylesheet" href="index.css" />
     <script lang="javascript">
+      // Allow = #method;
+
       function validate() {
         valid = true;
         with (document.data) {
           if (email.value == "") {
             alert("Email is required");
-            email.focus();
+            //email.focus();
             valid = false;
           }
           if (name.value == "") {
             alert("Phone is required");
-            name.focus();
+            //name.focus();
             valid = false;
           }
+        }
+        if (valid) {
+          alert("congrats!");
         }
         return valid;
       }
