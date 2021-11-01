@@ -4,6 +4,9 @@
 img {
   max-height: 80px;
   width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .nav-bar {
   border-radius: 5px;
