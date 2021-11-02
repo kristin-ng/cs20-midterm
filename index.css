@@ -1,7 +1,7 @@
 @-ms-viewport {
   width: device-width;
 }
-img {
+.logo img {
   max-height: 80px;
   width: auto;
   display: block;
@@ -82,4 +82,8 @@ body {
 }
 .card-container {
   text-align: left;
+}
+
+.card {
+  display: none;
 }
