@@ -10,6 +10,7 @@ function appendToList(event) {
   var comment_form = $(".comment");
   var comment = $(".comment").val();
   var name = $(".name").val();
+ 
 
   feedback = $("input[name='feedback']");
   feedbackGet = feedback.get(0);
@@ -21,11 +22,12 @@ function appendToList(event) {
 
   container.append(`
    <div class="card">
-     <p class="task">"${comment}" </p>
-     <p class="task"> - ${name} </p>
+     <p id="p"class="task">"${comment}" </p>
+     <p id="p" class="task"> - ${name} </p>
      <button class="delete"> Delete! </button>
    </div>
  `);
+ $(".card").fadeIn("slow");
   name_form.val("");
   email_form.val("");
   comment_form.val("");
