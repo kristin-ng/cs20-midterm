@@ -56,7 +56,7 @@ footer {
 }
 body {
   background-color: #99a8b1;
-  background-image: url('https://media.istockphoto.com/photos/blue-wall-texture-picture-id175400834?k=20&m=175400834&s=612x612&w=0&h=jYHEi1_sjnYnuI8ne6_KOm3iQ9NllGd3zKq6MZ5RJMQ=');
+  background-image: url("https://media.istockphoto.com/photos/blue-wall-texture-picture-id175400834?k=20&m=175400834&s=612x612&w=0&h=jYHEi1_sjnYnuI8ne6_KOm3iQ9NllGd3zKq6MZ5RJMQ=");
   background-size: 1600px 750px;
 }
 .user-input {
@@ -86,4 +86,12 @@ body {
 
 .card {
   display: none;
+}
+.amy {
+  width: 50%;
+  height: auto;
+}
+.caroline {
+  width: 21%;
+  height: auto;
 }
