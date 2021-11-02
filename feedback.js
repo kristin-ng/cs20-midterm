@@ -41,7 +41,7 @@ function appendToList(event) {
      <button class="delete"> Delete! </button>
    </div>
  `);
- $(".card").fadeIn();
+ $(".card").fadeIn("slow");
   name_form.val("");
   email_form.val("");
   comment_form.val("");
